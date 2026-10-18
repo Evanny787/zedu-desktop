@@ -19,9 +19,7 @@ Widget buildReferralViewUnderTest({FakeAuthNotifier? notifier}) {
     overrides: [
       authNotifierProvider.overrideWith(() => notifier ?? FakeAuthNotifier()),
     ],
-    child: const MaterialApp(
-      home: ReferralView(),
-    ),
+    child: const MaterialApp(home: ReferralView()),
   );
 }
 
